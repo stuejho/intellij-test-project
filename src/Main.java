@@ -1,10 +1,10 @@
 public class Main {
 
-    public static void b() {
+    public static void a() {
 
     }
 
-    public static void a() {
+    public static void b() {
 
     }
 
