@@ -3,9 +3,21 @@ import java.util.Objects;
 
 public class RearrangeCode {
     private int id;
+    private String firstName;
+    private String middleName;
+    private String lastName;
+    private String phone;
+    private String notes;
+    private Collection<Order> ordersById;
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        int newID = 1;
+        System.out.println(newID);
+        this.id = id;
     }
 
     @Override
@@ -21,19 +33,9 @@ public class RearrangeCode {
                 '}';
     }
 
-    private String firstName;
-
     private void privateHelperMethod() {
         // does something in here
     }
-
-    public void setId(int id) {
-        int newID = 1;
-        System.out.println(newID);
-        this.id = id;
-    }
-
-    private String middleName;
 
     public String getMiddleName() {
         return middleName;
@@ -43,13 +45,9 @@ public class RearrangeCode {
         this.middleName = middleName;
     }
 
-    private String lastName;
-
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
-    private String phone;
 
     public String getPhone() {
         return phone;
@@ -58,8 +56,6 @@ public class RearrangeCode {
     public void setPhone(String phone) {
         this.phone = phone;
     }
-
-    private String notes;
 
     public String getNotes() {
         return notes;
@@ -87,8 +83,6 @@ public class RearrangeCode {
     public int hashCode() {
         return Objects.hash(id, firstName, middleName, lastName, phone, notes, ordersById);
     }
-
-    private Collection<Order> ordersById;
 
     public Collection<Order> getOrdersById() {
         return ordersById;
